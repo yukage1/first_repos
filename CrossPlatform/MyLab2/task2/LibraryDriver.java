@@ -6,7 +6,7 @@ import java.io.*;
 
 
 public class LibraryDriver {
-    private static final File file = new File("src//data//task2.txt");
+    private static final File file = new File("Data//task2.txt");
 
     public static void serializeObject(Object object) {
         try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(file))) {

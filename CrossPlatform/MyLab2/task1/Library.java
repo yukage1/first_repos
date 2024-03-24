@@ -49,11 +49,11 @@ public class Library implements Serializable{
     @Override
     public String toString(){
         StringBuilder libraryString = new StringBuilder();
-        libraryString.append("Library name: ").append("\033[36m").append(name).append("\n\n" + "\033[35m");
+        libraryString.append("Library name: ").append(name).append("\n\n");
 
         libraryString.append("Book Stores: ");
         for (BookStore bookStore: bookStores){
-            libraryString.append(bookStore.toString()).append("\033[35m");
+            libraryString.append(bookStore.toString());
         }
 
         libraryString.append("Readers:");

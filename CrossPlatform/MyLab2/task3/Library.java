@@ -85,18 +85,18 @@ public class Library implements Externalizable {
     @Override
     public String toString(){
         StringBuilder libraryString = new StringBuilder();
-        libraryString.append("Library name: ").append("\033[36m").append(name).append("\n\n" + "\033[35m");
+        libraryString.append("Library name: ").append(name).append("\n\n");
 
         libraryString.append("Book Stores: \n");
 
         for (BookStore bookStore: bookStores){
-            libraryString.append(bookStore.toString()).append("\n" + "\033[35m");
+            libraryString.append(bookStore.toString());
         }
 
         libraryString.append("\nReaders:\n");
 
         for (BookReader bookReader : registeredReaders){
-            libraryString.append(bookReader.toString());
+            libraryString.append(bookReader.toString()).append("\n\n");
         }
 
 

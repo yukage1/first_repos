@@ -32,7 +32,7 @@ public class BookReader extends Human {
     @Override
     public String toString(){
         StringBuilder bookReaderString = new StringBuilder();
-        bookReaderString.append("\033[36m" + "Reader number: ").append(registerNumber).append("\n");
+        bookReaderString.append("Reader number: ").append(registerNumber).append("\n");
         bookReaderString.append(super.toString()).append("\n");
         bookReaderString.append("Taken books:\n");
         for(Book book: books){

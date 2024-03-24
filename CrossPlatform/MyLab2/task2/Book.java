@@ -46,13 +46,13 @@ public class Book {
     }
 
     public String toString(){
-        StringBuilder bookString = new StringBuilder("\033[36m" + "\nBook name: " + title + "\n");
+        StringBuilder bookString = new StringBuilder("\nBook name: " + title + "\n");
         bookString.append("Authors:");
         for (Author author : authors){
             bookString.append(" ").append(author.toString()).append("\n");
         }
         bookString.append("Year of writing: ").append(yearOfWriting).append("\n");
-        bookString.append("Series: ").append(series).append("\033[35m").append("\n");
+        bookString.append("Series: ").append(series).append("\n");
 
         return bookString.toString();
     }

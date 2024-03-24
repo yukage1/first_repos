@@ -40,7 +40,7 @@ public class BookStore implements Serializable{
 
     public String toString(){
         StringBuilder bookStoreString = new StringBuilder();
-        bookStoreString.append("\033[35m").append("Theme: ").append(theme);
+        bookStoreString.append("Theme: ").append(theme);
         for (Book book : books){
             bookStoreString.append(book.toString());
         }
